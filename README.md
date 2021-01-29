@@ -15,5 +15,6 @@ and the parametric equation for the curve itself:
 ## Example
 γ(t) = (tcos(t), tsin(t), t )
 ![Alt Text](examples/tcost_tsint_t.gif)
+
 γ(t) = (t, tsin(t), exp(-t^2) )
 ![Alt Text](examples/t_tsint_expt(t^2).gif)
