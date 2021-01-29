@@ -1,13 +1,12 @@
-# # using Plots
-# using GRUtils
-# using CalculusWithJulia
-# include("functions.jl")
-# using Dates
+using GRUtils
+using CalculusWithJulia
+include("functions.jl")
+using Dates
 
 n=200
 t=range(0, 6pi, length=n)
 
-#= 
+#=
 γ(t) = ( f(t), g(t), h(t) )
 =#
 f(t) = t
