@@ -5,10 +5,7 @@ using Dates
 
 n=200
 t=range(0, 6pi, length=n)
-
-#=
-γ(t) = ( f(t), g(t), h(t) )
-=#
+# γ(t) = ( f(t), g(t), h(t) )
 f(t) = t
 g(t) = t*sin(t)
 h(t) = e^(-t^2)
@@ -29,7 +26,7 @@ fig = Figure()
 plot3(x,y,z, "-.r",
     xlim=xl, ylim=yl, zlim=zl )
 
-######### Versori di Frenet #########
+######### Setup for Frenet's Versors #########
 
 f1=diff(f)
 g1=diff(g)
@@ -38,13 +35,12 @@ f2=diff(f1)
 g2=diff(g1)
 h2=diff(h1)
 
-######### Grafici #########
+######### Graphic Tests #########
 
-# sleep(0.5)
 fig = Figure()
+# sleep(0.5)
 # plot3(x,z,y, "-.r",
 #     xlim=extrema(x), ylim=extrema(y),zlim=extrema(z) )
-
 # hold(true)
 # zoom(20)
 # tilt(-20)
@@ -68,4 +64,4 @@ end
 videofile(figures, "frenet_out_$(replace(
         string(now()), r"\.|\:" => "_")).mp4")
 
-###########################
+#########################
