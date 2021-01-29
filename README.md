@@ -13,7 +13,7 @@ and the parametric equation for the curve itself:
 5. h(t): third component of the curve
 
 ## Example
-γ(t) = (t*cos(t), t*sin(t), t )
+γ(t) = (tcos(t), tsin(t), t )
 ![Alt Text](examples/tcost_tsint_t.gif)
-γ(t) = (t, t*sin(t), exp(-t^2) )
+γ(t) = (t, tsin(t), exp(-t^2) )
 ![Alt Text](examples/t_tsint_expt(t^2).gif)
