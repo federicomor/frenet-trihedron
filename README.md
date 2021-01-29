@@ -7,6 +7,7 @@ In the file frenet.jl set the variables:
 2. t: interval of definition of the curve
 
 and the parametric equation for the curve itself:
+
 3. f(t): first component of the curve
 4. g(t): second component of the curve
 5. h(t): third component of the curve
