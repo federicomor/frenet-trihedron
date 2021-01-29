@@ -1,5 +1,7 @@
 # frenet-trihedron
-Visual representation of the Frenet Trihedron for a parametric space curve
+Visual representation of the Frenet Trihedron for a parametric space curve.
+
+[ Rappresentazione grafica del Triedro di Frenet per curve parametriche nello spazio.]
 
 ## Usage
 In the file frenet.jl set the variables:
