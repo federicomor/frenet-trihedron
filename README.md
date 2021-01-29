@@ -12,6 +12,9 @@ and the parametric equation for the curve itself:
 4. g(t): second component of the curve
 5. h(t): third component of the curve
 
+![These ones](examples/instructions.png)
+
+
 ## Example
 γ(t) = (tcos(t), tsin(t), t )
 ![Alt Text](examples/tcost_tsint_t.gif)
