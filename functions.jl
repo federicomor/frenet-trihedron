@@ -15,17 +15,17 @@ function v_N(time::Float64)
     return normalize( cross( v_B(time), v_T(time) ) )
 end
 
-function draw_vector(vec::Array{}, i::Int64)
+function draw_vector(vec::Array{}, i::Int64, molt::Float64)
     u = vec[1]
     v = vec[2]
     w = vec[3]
-    molt=7
+    # molt=7
     quiver3(x[i], y[i], z[i], molt*u, molt*v, molt*w, "--o",     
             markersize=1)
 end
 
-function draw_triedro(time::Float64, i::Int64)
-    draw_vector(v_T(time), i)
-    draw_vector(v_N(time), i)
-    draw_vector(v_B(time), i)
+function draw_triedro(time::Float64, i::Int64, molt::Float64)
+    draw_vector(v_T(time), i, molt)
+    draw_vector(v_N(time), i, molt)
+    draw_vector(v_B(time), i, molt)
 end

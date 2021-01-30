@@ -5,11 +5,12 @@ using LinearAlgebra
 include("functions.jl")
 
 n = 200
-t = range(0, 6pi, length=n)
+t = range(-3, 3, length=n)
 # γ(t) = ( f(t), g(t), h(t) )
 f(t) = t
 g(t) = t*sin(t)
-h(t) = t*cos(t)
+h(t) = exp(-t^2)
+molt=2.0
 
 x=f.(t)
 y=g.(t)
@@ -39,7 +40,7 @@ h2=diff(h1)
 ######### Grafici #########
 
 # sleep(0.5)
-fig = Figure()
+# fig = Figure()
 # plot3(x,z,y, "-.r",
 #     xlim=extrema(x), ylim=extrema(y),zlim=extrema(z) )
 
@@ -57,7 +58,7 @@ for j in 1:n
     plot3(x,y,z, "-.r",
         xlim=xl, ylim=yl, zlim=zl )
     hold(true)
-    draw_triedro(t[j], j)
+    draw_triedro(t[j], j, molt)
     # viewpoint(30,60)
     p=draw(gcf())
     

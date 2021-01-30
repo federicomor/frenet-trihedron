@@ -14,6 +14,10 @@ and the parametric equation for the curve itself:
 4. g(t): second component of the curve
 5. h(t): third component of the curve
 
+and finally
+
+6. molt: the coefficient to determine the magnitude of the versors of the trihedron
+
 ![These ones](examples/instructions.png)
 
 
