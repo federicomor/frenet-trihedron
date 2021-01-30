@@ -20,10 +20,9 @@ and finally
 
 ![These ones](examples/instructions.png)
 
-
 ## Examples
 γ(t) = ( tcos(t), tsin(t), t )
 ![Alt Text](examples/tcost_tsint_t.gif)
 
 γ(t) = ( t, tsin(t), exp(-t^2) )
-![Alt Text](examples/t_tsint_expt(t^2).gif)
+![Alt Text](examples/t_tsint_exp(-t^2).gif)

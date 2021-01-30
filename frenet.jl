@@ -1,16 +1,16 @@
-using GRUtils
-using CalculusWithJulia
-using Dates
-using LinearAlgebra
-include("functions.jl")
+# using GRUtils
+# using CalculusWithJulia
+# using Dates
+# using LinearAlgebra
+# include("functions.jl")
 
 n = 200
-t = range(-3, 3, length=n)
+t = range(0, 6pi, length=n)
 # γ(t) = ( f(t), g(t), h(t) )
 f(t) = t
 g(t) = t*sin(t)
 h(t) = exp(-t^2)
-molt=2.0
+molt=5.0
 
 x=f.(t)
 y=g.(t)
