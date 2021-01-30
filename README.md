@@ -1,7 +1,7 @@
 # frenet-trihedron
 Visual representation of the Frenet Trihedron for a parametric space curve.
 
-[ Rappresentazione grafica del Triedro di Frenet per curve parametriche nello spazio.]
+[ Rappresentazione grafica del Triedro di Frenet per curve parametriche nello spazio. ]
 
 ## Usage
 In the file frenet.jl set the variables:
@@ -18,8 +18,8 @@ and the parametric equation for the curve itself:
 
 
 ## Examples
-γ(t) = (tcos(t), tsin(t), t )
+γ(t) = ( tcos(t), tsin(t), t )
 ![Alt Text](examples/tcost_tsint_t.gif)
 
-γ(t) = (t, tsin(t), exp(-t^2) )
+γ(t) = ( t, tsin(t), exp(-t^2) )
 ![Alt Text](examples/t_tsint_expt(t^2).gif)
