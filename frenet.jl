@@ -1,5 +1,6 @@
 using GRUtils
 using CalculusWithJulia
+using LinearAlgebra
 include("functions.jl")
 using Dates
 
