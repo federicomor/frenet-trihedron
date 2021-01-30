@@ -1,8 +1,8 @@
-# using GRUtils
-# using CalculusWithJulia
-# using Dates
-# using LinearAlgebra
-# include("functions.jl")
+using GRUtils
+using CalculusWithJulia
+using Dates
+using LinearAlgebra
+include("functions.jl")
 
 n = 200
 t = range(0, 6pi, length=n)
