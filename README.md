@@ -1,9 +1,9 @@
 # frenet-trihedron
 Visual representation of the Frenet Trihedron for a parametric space curve.
 
-The beautiful thing that on wikipedia is known as [Frenet and Serret formulas](https://en.wikipedia.org/wiki/Frenet%E2%80%93Serret_formulas).
-
 [ Rappresentazione grafica del Triedro di Frenet per curve parametriche nello spazio. ]
+
+The beautiful thing that on wikipedia is known as [Frenet and Serret formulas](https://en.wikipedia.org/wiki/Frenet%E2%80%93Serret_formulas).
 
 ## Usage
 In the file frenet.jl set the variables:
