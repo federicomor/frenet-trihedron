@@ -1,6 +1,8 @@
 # frenet-trihedron
 Visual representation of the Frenet Trihedron for a parametric space curve.
 
+The beautiful thing that on wikipedia is known as [Frenet and Serret formulas](https://en.wikipedia.org/wiki/Frenet%E2%80%93Serret_formulas).
+
 [ Rappresentazione grafica del Triedro di Frenet per curve parametriche nello spazio. ]
 
 ## Usage
@@ -22,12 +24,12 @@ t = range(0, 6pi, length=n)
 f(t) = t
 g(t) = t*sin(t)
 h(t) = exp(-t^2)
-molt=5.0
+molt = 5.0
 ```
 
 ## Examples
-γ(t) = ( tcos(t), tsin(t), t )
+γ(t) = ( t\*cos(t), t\*sin(t), t )
 ![Alt Text](examples/tcost_tsint_t.gif)
 
-γ(t) = ( t, tsin(t), exp(-t^2) )
+γ(t) = ( t, t\*sin(t), exp(-t^2) )
 ![Alt Text](examples/t_tsint_exp(-t^2).gif)
