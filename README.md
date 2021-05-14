@@ -13,12 +13,17 @@ and the parametric equation for the curve itself:
 3. f(t): first component of the curve
 4. g(t): second component of the curve
 5. h(t): third component of the curve
-
-and finally
-
 6. molt: the coefficient to determine the magnitude of the versors of the trihedron
 
-![These ones](examples/instructions.png)
+```julia
+n = 200
+t = range(0, 6pi, length=n)
+# γ(t) = ( f(t), g(t), h(t) )
+f(t) = t
+g(t) = t*sin(t)
+h(t) = exp(-t^2)
+molt=5.0
+```
 
 ## Examples
 γ(t) = ( tcos(t), tsin(t), t )
