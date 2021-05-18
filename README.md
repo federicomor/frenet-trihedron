@@ -10,12 +10,12 @@ In the file frenet.jl set the variables:
 1. n: number of points to plot
 2. t: interval of definition of the curve
 
-and the parametric equation for the curve itself:
+and the parametric equation for the curve:
 
 3. f(t): first component of the curve
 4. g(t): second component of the curve
 5. h(t): third component of the curve
-6. molt: the coefficient to determine the magnitude of the versors of the trihedron
+6. molt: the coefficient to determine the magnitude of the vectors of the trihedron
 
 ```julia
 n = 200
