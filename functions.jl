@@ -19,12 +19,10 @@ function draw_vector(vec::Array{}, i::Int64, molt::Float64)
     u = vec[1]
     v = vec[2]
     w = vec[3]
-    # molt=7
-    quiver3(x[i], y[i], z[i], molt*u, molt*v, molt*w, "--o",     
-            markersize=1)
+    plot!([x[i],x[i]+u*molt], [y[i],y[i]+v*molt], [z[i],z[i]+w*molt],linecolor="green",linewidth=2,legend=false)
 end
 
-function draw_triedro(time::Float64, i::Int64, molt::Float64)
+function draw_trihedron(time::Float64, i::Int64, molt::Float64)
     draw_vector(v_T(time), i, molt)
     draw_vector(v_N(time), i, molt)
     draw_vector(v_B(time), i, molt)
