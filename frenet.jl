@@ -28,7 +28,7 @@ anim=@animate for i in 1:length(t)
     p = plot(x, y, z,legend=false)
     draw_trihedron(t[i], i, molt)
     # uncomment to oscillate the camera angle (values in degrees: (azimuth, altitude))
-    # plot!(p, camera = (i*45/length(t), 40))
+    plot!(p, camera = (i*45/length(t), 40))
 end
 gif(anim)
 name=replace(string(now()), r"\.|\:" => "_")

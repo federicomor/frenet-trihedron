@@ -17,6 +17,7 @@ In the file frenet.jl set these things:
 7. the first and second derivatives of the components
 
 All of that appears in the first lines of the script.
+Also, you can uncomment line 31 to make the viewing angle change with time. 
 
 ```julia
 n = 200
@@ -37,4 +38,10 @@ h2(t)=0
 
 ## Examples
 γ(t) = ( t\*cos(t), t\*sin(t), t )
-![Alt Text](examples/2021-09-17T21_12_50_182.gif)
+
+![](examples/2021-09-17T21_12_50_182.gif)
+
+with spinning camera:
+
+![](examples/2021-09-17T21_16_11_833.gif)
+
