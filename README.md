@@ -16,7 +16,7 @@ In the file frenet.jl set these things:
 6. molt: the coefficient to determine the magnitude of the vectors of the trihedron
 7. the first and second derivatives of the components
 
-which appears in the first lineso of the script.
+All of that appears in the first lines of the script.
 
 ```julia
 n = 200
