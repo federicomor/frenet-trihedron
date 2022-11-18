@@ -40,7 +40,5 @@ h2(t) = 0
 
 ![](examples/2021-09-17T21_12_50_182.gif)
 
-Also, you can uncomment line 31 to make the viewing angle change with time, ie having a video with spinning camera.
-
-# ![](examples/2021-09-17T21_16_11_833.gif)
+Also, you can uncomment line 31 to make the viewing angle change with time, ie having a video with a spinning camera.
 
