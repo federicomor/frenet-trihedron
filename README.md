@@ -1,40 +1,33 @@
 # frenet-trihedron
-Visual representation of the Frenet Trihedron for a parametric space curve (it: Rappresentazione grafica del Triedro di Frenet per curve parametriche nello spazio). The beautiful thing that on wikipedia is known as [Frenet and Serret formulas](https://en.wikipedia.org/wiki/Frenet%E2%80%93Serret_formulas).
+Visual representation of the Frenet Trihedron for a parametric space curve (*in italian*: Rappresentazione grafica del Triedro di Frenet per curve parametriche nello spazio).
+
+The beautiful thing that on wikipedia is known as [Frenet and Serret formulas](https://en.wikipedia.org/wiki/Frenet%E2%80%93Serret_formulas).
 
 ## Usage
-In the file frenet.jl set these things:
+In the file `frenet.jl` in the section *Parameters for the curve* set these things:
 
 1. n: number of points to plot
 2. t: interval of definition of the curve
 3. f(t): first component of the curve (written in hers parametric equation)
 4. g(t): second component of the curve
 5. h(t): third component of the curve
-6. molt: the coefficient to determine the magnitude of the vectors of the trihedron
 7. the first and second derivatives of the components
 
-All of that appears in the first lines of the script.
+while in the section *Graphical parameters* you have to experiment with the following variables until you get a nice plot:
 
-```julia
-n = 200
-t = range(0, 6pi, length=n)
-# γ(t) = ( f(t), g(t), h(t) )
-f(t) = t*cos(t)
-g(t) = t*sin(t)
-h(t) = t
-molt = 2.0
-# Derivatives of f,g,h
-f1(t) = cos(t)-t*sin(t)
-f2(t) = -2*sin(t)-t*cos(t)
-g1(t) = sin(t)+t*cos(t)
-g2(t) = 2*cos(t)-t*sin(t)
-h1(t) = 1
-h2(t) = 0
-```
+1. molt: the coefficient to determine the magnitude of the vectors of the trihedron
+2. limx, limy and limz the axes range for where put the plot
+3. cam_height to set, well, the height of the camera
+
+And in the main for loop you can uncomment a line to make the camera turn around the curve during the plot (and conseguent gif creation) procedure.
 
 ## Examples
 γ(t) = ( t\*cos(t), t\*sin(t), t )
 
-![](examples/2021-09-17T21_12_50_182.gif)
+![](examples/2023-04-10T18_42_15_044.gif)
+![](examples/2023-04-10T18_43_15_88.gif)
 
-Also, you can uncomment line 31 to make the viewing angle change with time, ie having a video with a spinning camera.
+γ(t) = ( cos(t)^2, cos(t)\*sin(t), sin(t) )
 
+![](examples/2023-04-10T18_37_41_284.gif)
+![](examples/2023-04-10T18_36_35_635.gif)
