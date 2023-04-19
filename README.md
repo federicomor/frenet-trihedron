@@ -8,10 +8,8 @@ In the file `frenet.jl` in the section *Parameters for the curve* set these thin
 
 1. n: number of points to plot
 2. t: interval of definition of the curve
-3. f(t): first component of the curve (written in hers parametric equation)
-4. g(t): second component of the curve
-5. h(t): third component of the curve
-7. the first and second derivatives of the components
+3. the three components of the curve, where we think of the curve as written in hers parametric equation so γ(t) = (f(t), g(t), h(t))
+4. the first and second derivatives of the components
 
 while in the section *Graphical parameters* you have to experiment with the following variables until you get a nice plot:
 
