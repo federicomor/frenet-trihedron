@@ -8,9 +8,10 @@ In the file `frenet.jl` in the section *Parameters for the curve* set these thin
 
 1. n: number of points to plot
 2. t: interval of definition of the curve
-3. the three components of the curve, where we think of the curve as written in hers parametric equation so γ(t) = (f(t), g(t), h(t))
+3. the three components of the curve
 4. the first and second derivatives of the components
 
+Where we think of the curve as written in hers parametric equations, so γ(t) = (f(t), g(t), h(t)).
 while in the section *Graphical parameters* you have to experiment with the following variables until you get a nice plot:
 
 1. molt: the coefficient to determine the magnitude of the vectors of the trihedron
