@@ -10,14 +10,14 @@ In the file `frenet.jl` in the section *Parameters for the curve* set these thin
 3. the three components of the curve
 4. the first and second derivatives of the components
 
-Where we think of the curve as written in hers parametric equations, so γ(t) = (f(t), g(t), h(t)).
-while in the section *Graphical parameters* you have to experiment with the following variables until you get a nice plot:
+where we think of the curve as written in hers parametric equations, so γ(t) = (f(t), g(t), h(t)).
+While in the section *Graphical parameters* you have to experiment a bit, tuning the following variables, until you get a nice plot:
 
-1. molt: the coefficient to determine the magnitude of the vectors of the trihedron
-2. limx, limy and limz the axes range for where put the plot
-3. cam_height to set, well, the height of the camera
+1. molt: the coefficient to determine the magnitude of the vectors of the trihedron (as they should be versors, but to have a better visualization they need to be scaled according to the context dimension, ie morally the space occupied by the curve)
+2. limx, limy and limz the axes range for where put the plot (default values however are already provided)
+3. cam_height to set, well, the height of the camera (as maybe different views give better results)
 
-And in the main for loop you can uncomment a line to make the camera turn around the curve during the plot (and conseguent gif creation) procedure.
+And in the main for loop you can uncomment a line to make the camera turn around the curve during the plot (and the conseguent gif creation) procedure.
 
 ## Examples
 γ(t) = ( t\*cos(t), t\*sin(t), t )
