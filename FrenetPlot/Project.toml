@@ -1,0 +1,4 @@
+name = "FrenetPlot"
+uuid = "45e2e217-e245-4f51-8b89-4d15ccfce889"
+authors = ["Federico Angelo Mor <federangelomor@gmail.com>"]
+version = "0.1.0"
